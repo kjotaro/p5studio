@@ -6,8 +6,7 @@
 [![license](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
 [![node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org/)
 
-<!-- TODO: Add demo GIF here -->
-<!-- ![demo](docs/demo.gif) -->
+![demo](docs/demo.gif)
 
 ---
 
