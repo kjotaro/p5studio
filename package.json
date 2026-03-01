@@ -1,0 +1,39 @@
+{
+  "name": "p5studio",
+  "version": "0.1.0",
+  "description": "p5.js × Claude Code integration framework for generative art",
+  "type": "module",
+  "bin": {
+    "p5studio": "./cli/index.js"
+  },
+  "scripts": {
+    "dev": "node cli/index.js dev",
+    "render": "node cli/index.js render",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "vitest run --config vitest.e2e.config.js"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "chokidar": "^4.0.3",
+    "commander": "^12.1.0",
+    "express": "^4.21.2",
+    "ffmpeg-static": "^5.2.0",
+    "open": "^10.1.0",
+    "ora": "^8.2.0",
+    "puppeteer": "^22.0.0",
+    "ws": "^8.18.0"
+  },
+  "keywords": [
+    "p5js",
+    "generative-art",
+    "claude-code",
+    "animation",
+    "creative-coding"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "execa": "^9.6.1",
+    "vitest": "^4.0.18"
+  }
+}
