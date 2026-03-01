@@ -1,0 +1,24 @@
+# 依存パッケージ（npm install で再生成できる）
+node_modules/
+
+# レンダリング済み動画（重いのでGitには入れない）
+out/
+tests/e2e/out/
+
+# Mac の隠しファイル
+.DS_Store
+
+# エディタ設定
+.vscode/
+.idea/
+
+# 環境変数・秘密情報（絶対にコミットしない）
+.env
+.env.*
+*.secret
+
+# 個人用フィードバックファイル
+feedback.md
+
+# npmパブリッシュ時の一時ファイル
+*.tgz
