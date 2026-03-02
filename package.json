@@ -1,6 +1,6 @@
 {
   "name": "@kjotaro/p5studio",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "p5.js × Claude Code integration framework for generative art",
   "type": "module",
   "bin": {
