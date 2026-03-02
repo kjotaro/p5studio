@@ -2,7 +2,7 @@
 
 **p5.js live preview and MP4 renderer — built for creative coding with Claude Code.**
 
-[![npm version](https://img.shields.io/npm/v/p5studio)](https://www.npmjs.com/package/p5studio)
+[![npm version](https://img.shields.io/npm/v/@kjotaro/p5studio)](https://www.npmjs.com/package/@kjotaro/p5studio)
 [![license](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
 [![node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org/)
 
@@ -51,13 +51,13 @@ sketches/my-art.js
 ## Installation
 
 ```bash
-npm install -g p5studio
+npm install -g @kjotaro/p5studio
 ```
 
 Or use without installing:
 
 ```bash
-npx p5studio init my-art
+npx @kjotaro/p5studio init my-art
 ```
 
 ---
