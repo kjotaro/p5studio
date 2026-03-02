@@ -85,6 +85,8 @@ function buildRenderHTML(sketchCode, meta) {
       const origSetup = window.setup;
       window.setup = function() {
         if (origSetup) origSetup();
+        // WEBGL キャンバスの描画バッファを保持（スクリーンショット用）
+        try { setAttributes('preserveDrawingBuffer', true); } catch(e) {}
         // グローバル p5 インスタンスは window._renderer._pInst に存在する
         window.__P5STUDIO__._p5instance = window._renderer && window._renderer._pInst;
         if (window.__P5STUDIO__._p5instance) {
@@ -151,11 +153,14 @@ export async function renderSketch(sketchPath, outputPath, options = {}) {
     const page = await browser.newPage();
     await page.setViewport({ width: meta.width, height: meta.height });
 
-    // エラーログ
+    // エラーログ（全種類を出力してデバッグ）
     page.on('console', msg => {
       if (msg.type() === 'error') {
         console.error(chalk.red(`[ブラウザ] ${msg.text()}`));
       }
+    });
+    page.on('pageerror', err => {
+      console.error(chalk.red(`[ページエラー] ${err.message}`));
     });
 
     // HTMLをロード
