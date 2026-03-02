@@ -1,10 +1,10 @@
 {
-  "name": "p5studio",
+  "name": "@kjotaro/p5studio",
   "version": "0.1.0",
   "description": "p5.js × Claude Code integration framework for generative art",
   "type": "module",
   "bin": {
-    "p5studio": "./cli/index.js"
+    "p5studio": "cli/index.js"
   },
   "scripts": {
     "dev": "node cli/index.js dev",
@@ -24,6 +24,14 @@
     "puppeteer": "^22.0.0",
     "ws": "^8.18.0"
   },
+  "files": [
+    "cli/",
+    "renderer/",
+    "studio/",
+    "templates/",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "p5js",
     "generative-art",
